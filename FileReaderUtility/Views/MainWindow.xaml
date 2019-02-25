@@ -20,7 +20,19 @@
                 1. Click on (Open File Dialog) button to show the file dialog<LineBreak/>
                 2. Select the file and Click on (Open) button to see the content of the file<LineBreak/>
         </TextBlock>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" >
+                <Label  Content="Select file type" FontSize="14" Width="200"></Label>
+                <ComboBox 
+                       Text="{Binding SelectedFileType, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                       ItemsSource="{Binding FileTypeList}" FontSize="12" Width="100"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  Margin="0 20 20 5">
+                <Label  Content="Select encryption algorithm" FontSize="14" Width="200"></Label>
+                <ComboBox  
+                       Text="{Binding SelectedEncryptionAlgorithm, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                       ItemsSource="{Binding EncryptionAlgorithmList}" FontSize="12" Width="100"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 20 20 5">
                 <Button Content="Open File Dialog" 
                 Command="{Binding Path=OpenFileDialogCommand}" 
                 Width="150" Height="20"  VerticalAlignment="Top" HorizontalAlignment="Left"
@@ -29,6 +41,7 @@
                 <TextBlock Margin="10 0 0 0" 
                 Text="{Binding FilePath}" />
             </StackPanel>
+           
             <StackPanel Margin="30" Orientation="Horizontal">
                 <TextBox Name="txtEditor" Text="{Binding FileResult}" />
             </StackPanel>
