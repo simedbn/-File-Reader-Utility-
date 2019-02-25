@@ -17,8 +17,10 @@
                 Background="Ivory" Foreground="Black" Padding="5">
                 <TextBlock Margin="0 0 0 20" FontWeight="Bold">
                     How to use the demonstration</TextBlock><LineBreak/>
-                1. Click on (Open File Dialog) button to show the file dialog<LineBreak/>
-                2. Select the file and Click on (Open) button to see the content of the file<LineBreak/>
+                1. Select the file type to read<LineBreak/>
+                2. select the encryption algorith if needed<LineBreak/>
+                3. Click on (Open File Dialog) button to show the file dialog<LineBreak/>
+                4. Select the file and Click on (Open) button to see the content of the file<LineBreak/>
         </TextBlock>
             <StackPanel Orientation="Horizontal" >
                 <Label  Content="Select file type" FontSize="14" Width="200"></Label>

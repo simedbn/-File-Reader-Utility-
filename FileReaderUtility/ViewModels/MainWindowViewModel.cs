@@ -220,7 +220,8 @@ namespace FileReaderUtility.ViewModels
             {
 
                  "TXT",
-                 "XML"
+                 "XML",
+                 "JSON"
             };
         }
     }
