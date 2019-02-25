@@ -69,7 +69,7 @@ namespace FileReaderUtility.ViewModels
 
             fileConfirmation.Title = "Choose the file to read";
             fileConfirmation.AddExtension = true;
-            fileConfirmation.Filter = "Text files (*.txt)|*.txt";
+            fileConfirmation.Filter = "Text files (*.txt)|*.txt|XML (*.*)|*.xml";
 
             // Show the dialog.
             OpenFileRequest.Raise(fileConfirmation, (of) =>
